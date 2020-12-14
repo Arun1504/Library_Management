@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body  
+{  
+    margin: 0;  
+    padding: 0;  
+    background-color:#6abadeba;  
+    font-family: 'Arial';  
+}  
+h1{  
+    text-align: center;  
+    color: black;  
+    padding: 20px;  
+}  
+
+label{  
+    color: #08ffd1; 
+        font-size: 20px;  
+}  
+#Uname{  
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 3px;  
+    padding-left: 8px;  
+}
+#adlog{  
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    text-align: center;
+    border-radius: 17px;  
+    padding-left: 7px;  
+    color: black;  
+  
+} 
+span{  
+    color: white;  
+    font-size: 17px;  
+}  
+.demo{  
+        width: 382px;  
+        overflow: hidden;  
+        margin: auto;  
+        margin: 20 0 0 450px;  
+        padding: 80px;  
+        background: #4d4d4d;  
+        border-radius: 15px ;  
+         opacity: 0.85; 
+}  
+
+}
+</style>
+</head>
+<body background="delbg.jpg">
+    <br>
+    <br>
+    <br>
+<h1> Delete a User </h1>
+
+<div class="demo">    
+    <form id="demo" method="get">    
+<label><b>Enter User Id to be Deleted     
+        </b>   
+        <br> 
+        </label>    <br>
+        <input type="text" name="Uname" id="Uname" placeholder="User ID">    
+        <br><br>      
+        
+        <button id="adlog" name="adlog" onclick="del()">Delete</button> 
+        <script type="text/javascript">
+        
+         function del()
+         {
+          if(document.getElementById('Uname').value == "CID001" || document.getElementById('Uname').value == "CID002" || document.getElementById('Uname').value == "CID003" || document.getElementById('Uname').value == "CID004")
+          {
+            document.getElementById("demo").action = "ad_homepage.html";
+          alert("User Deleted Successfully");
+        }
+        else
+        {
+          alert("Invalid User Details");
+         }
+        }
+
+</script>
+</form>
+</div>       
+
+</body>
+</html>

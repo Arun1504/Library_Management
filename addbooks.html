@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title>Library Management System</title>   
+    <link rel="stylesheet" type="text/css" href="css/addbook_style.css">  
+</head>
+<body background= "signupbg.jpg">
+    <h2 class="header-line">ADD BOOKS</h2>
+    <div class="addbooks">    
+    <form id="addbooks" method="get">    
+        <label><b>Book ID     
+        </b>    
+        </label>    
+        <input type="text" name="Bookid" id="Bookid" placeholder="Book ID">    
+        <br><br>    
+        <label><b>Book Name    
+        </b>    
+        </label>    
+        <br>
+        <input type="text" name="Bookname" id="Bookname" placeholder="Book Name">    
+        <br><br>    
+        <label><b>Author     
+        </b>    
+        </label> 
+        <br>    
+        <input type="text" name="Author" id="Author" placeholder="Author">    
+        <br><br> 
+        <label><b>Editor     
+        </b>    
+        </label> 
+        <br>    
+        <input type="text" name="Editor" id="Editor" placeholder="Editor">    
+        <br><br>  
+        <label><b>Year of Edition    
+        </b>    
+        </label> 
+        <br>    
+        <input type="text" name="Yearofedition" id="Yearofedition" placeholder="Year of Edition">    
+        <br><br>
+         <label><b>ISBN Number   
+        </b>    
+        </label> 
+        <br>    
+        <input type="text" name="Isbnnumber" id="Isbnnumber" placeholder="Isbn Number">    
+        <br><br> 
+        <button name="addbook" id="addbook" value="Add Book" onclick="addbooks()"> Add Book </button>         
+        <br>    
+         <script type="text/javascript">
+        
+         function addbooks()
+         {
+            if(document.getElementById('Bookid').value == "" || document.getElementById('Bookname').value == "" || document.getElementById('Author').value == "" || document.getElementById('Editor').value == "" || document.getElementById('Yearofedition').value == "" || document.getElementById('Isbnnumber').value == "")
+          {
+            alert("Fill all the Fields ");
+        }
+        else
+        {
+            document.getElementById("addbooks").action = "ad_homepage.html";
+
+          alert("Book Added Successfully");
+         
+        }
+    }
+
+</script> 
+    </form>     
+</div>    
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title>Library Management System</title>   
+    <link rel="stylesheet" type="text/css" href="css/signup_style.css">  
+    <script src="js/login.js"> </script>  
+</head>
+<body background= "signupbg.jpg">
+
+    <h2 class="header-line">Add User</h2>
+                 <div class="demo">    
+    <form id="demo" method="get">    
+        <label><b>Full Name     
+        </b>    
+        </label>    
+        <input type="text" name="Fname" id="Fname" placeholder="FullName">    
+        <br><br>    
+        <label><b>Mobile Number     
+        </b>    
+        </label>    
+        <br>
+        <input type="text" name="Mobileno" id="Mobileno" placeholder="MobileNumber">    
+        <br><br>    
+        <label><b>Email     
+        </b>    
+        </label> 
+        <br>    
+        <input type="text" name="Email" id="Email" placeholder="Email ID">    
+        <br><br> 
+        <label><b>Password     
+        </b>    
+        </label> 
+        <br>    
+        <input type="Password" name="Pass" id="Pass" placeholder="Password">    
+        <br><br>  
+        <label><b>Confirm Password     
+        </b>    
+        </label> 
+        <br>    
+        <input type="Password" name="CPass" id="CPass" placeholder="Confirm Password">    
+        <br><br><br>   
+        <button name="adduder" id="adduser" value="Add User" onclick="addusers()"> Add User </button>         
+        <br>     
+         <script type="text/javascript">
+        
+         function addusers()
+         {
+          if(document.getElementById('Fname').value == "" || document.getElementById('Mobileno').value == "" || document.getElementById('Email').value == "" || document.getElementById('Pass').value == "" || document.getElementById('CPass').value == "")
+         {
+          alert("Fill all the Fields");
+        }
+        else
+        {
+            document.getElementById("demo").action = "ad_homepage.html";
+         alert("User Added Successfully");   
+        }
+        }
+
+</script>
+    </form>     
+</div>    
+</body>
+</html>

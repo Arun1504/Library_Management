@@ -1,0 +1,51 @@
+<!DOCTYPE html>    
+<html>    
+<head>    
+    <title>Library Management System</title>   
+    <link rel="stylesheet" type="text/css" href="css/style.css">  
+</head>    
+<body background="bg.jpg">
+<div class="topnav">
+  <a href="ad_index.html">Admin Login</a>
+  <a href="index.html">Customer Login</a>
+</div>
+<br>
+<br>
+<br>    
+<h2>ADMIN LOGIN</h2>   
+    <div class="login">    
+    <form id="login" method="get">    
+        <label><b>User Name     
+        </b>    
+        </label>    
+        <input type="text" name="Uname" id="Uname" placeholder="Username">    
+        <br><br>    
+        <label><b>Password     
+        </b>    
+        </label>    
+        <input type="Password" name="Pass" id="Pass" placeholder="Password">    
+        <br><br>    
+        
+        <button id="adlog" name="adlog" onclick="check()">Login</button> 
+        <script type="text/javascript">
+            
+         function check() { 
+        var us=document.getElementById('Uname').value;
+        var ps=document.getElementById('Pass').value;
+        if(us == "admin" && ps == "admin")
+        {
+            document.getElementById("login").action = "ad_homepage.html";
+            alert("Login Successfully");
+        }
+        else
+        {alert("Please Enter Valid Details");
+         us="";
+         ps="";
+         }
+        }
+</script>       
+        <br><br>       
+    </form>     
+</div>    
+</body>    
+</html> 
